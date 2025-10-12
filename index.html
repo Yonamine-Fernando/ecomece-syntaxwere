@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ecomece — Home</title>
+    <link rel="stylesheet" href="css/base.css" />
+</head>
+
+<body>
+    <header class="site-header" role="banner">
+        <div class="container">
+            <a href="/" class="logo" aria-label="ecomece — página inicial">ecomece</a>
+            <nav class="main-nav" aria-label="Navegação principal">
+                <!-- Macro: links principais -->
+            </nav>
+        </div>
+    </header>
+
+    <main id="main" class="site-main" role="main">
+        <section id="hero" class="hero" aria-label="Seção hero">
+            <!-- Macro: hero (chamada principal) -->
+        </section>
+
+        <section id="categorias" class="categorias" aria-labelledby="categorias-title">
+            <div class="container">
+                <h2 id="categorias-title">Categorias de Tênis</h2>
+                <!-- Macro: lista de categorias -->
+            </div>
+        </section>
+
+        <section id="destaques" class="destaques" aria-labelledby="destaques-title">
+            <div class="container">
+                <h2 id="destaques-title">Produtos em Destaque</h2>
+                <div class="produtos-grid" role="list">
+                    <!-- Macro: grid de produtos -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+        <div class="container">
+            <section class="contato" aria-labelledby="contato-title">
+                <h3 id="contato-title">Contato</h3>
+                <!-- Macro: informações de contato -->
+            </section>
+
+            <section class="links-uteis" aria-labelledby="links-title">
+                <h3 id="links-title">Links</h3>
+                <!-- Macro: links úteis -->
+            </section>
+
+            <small class="copyright">© <span id="ano"></span> ecomece</small>
+        </div>
+    </footer>
+
+    <script>
+        // Insere ano atual no footer
+        document.getElementById('ano').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
