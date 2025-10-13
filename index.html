@@ -4,20 +4,53 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>ecomece — Home</title>
+    <title>SyntaxeWear - Tênis e Sneakers Online</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/variables.css">
     <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/components.css">
 </head>
 
 <body>
-    <header class="site-header" role="banner">
-        <div class="container">
-            <a href="/" class="logo" aria-label="ecomece — página inicial">ecomece</a>
-            <nav class="main-nav" aria-label="Navegação principal">
-                <!-- Macro: links principais -->
-            </nav>
-        </div>
+    <header class="header" role="banner">
+        <h1>
+            <a href="/">
+                <img src="./assets/images/logo/logo.svg" alt="SyntaxeWear - Tênis e Sneakers Online" />
+            </a>
+        </h1>
+        <nav class="nav-center" aria-label="Navegação principal">
+            <ul>
+                <li><a href="#">Masculino</a></li>
+                <li><a href="#">Feminino</a></li>
+                <li><a href="#">Outlet</a></li>
+            </ul>
+        </nav>
+
+        <nav class="nav-right" aria-label="Ações do usuário">
+            <ul>
+                <li class="text-item"><a href="#">Nossas lojas</a></li>
+                <li class="text-item"><a href="#">Sobre</a></li>
+                <li class="icon-item" aria-hidden="false">
+                    <!-- ícone usuário -->
+                    <a href="#" aria-label="Perfil">
+                        <img src="./assets/images/icons/user.svg" alt="Minha conta">
+                    </a>
+                </li>
+                <li class="icon-item">
+                    <!-- ícone ajuda -->
+                    <a href="#" aria-label="Ajuda">
+                        <img src="./assets/images/icons/help.svg" alt="Ajuda">
+                    </a>
+                </li>
+                <li class="icon-item">
+                    <!-- ícone sacola -->
+                    <a href="#" aria-label="Sacola">
+                        <img src="./assets/images/icons/bag.svg" alt="Sacola de compras">
+
+                    </a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
     <main id="main" class="site-main" role="main">
