@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./css/components/hero.css">
     <link rel="stylesheet" href="./css/components/product-category.css">
     <link rel="stylesheet" href="./css/components/products-grid.css">
+    <link rel="stylesheet" href="./css/components/footer.css">
 </head>
 
 <body>
@@ -120,23 +121,102 @@
         </section>
     </main>
 
-    <footer class="site-footer" role="contentinfo">
-        <section class="contato" aria-labelledby="contato-title">
-            <!-- Macro: informações de contato -->
-        </section>
+    <footer class="site-footer" role="contentinfo" id="footer">
+        <div class="footer-content">
+            <div class="footer-right">
+                <!-- newsletter -->
+                <section class="footer-newsletter" aria-labelledby="footer-newsletter-title">
+                    <h2 id="footer-newsletter-title">Inscreva-se em nosso e-mail</h2>
+                    <form class="newsletter-form" action="#" method="post" novalidate
+                        aria-describedby="newsletter-help">
+                        <div class="newsletter-field">
+                            <input id="newsletter-email" type="email" name="email" inputmode="email"
+                                autocomplete="email" placeholder="email@email.com" aria-required="true" required />
+                        </div>
+                    </form>
+                </section>
 
-        <section class="links-uteis" aria-labelledby="links-title">
+                <section class="footer-socials" aria-labelledby="footer-socials-title">
+                    <h2 id="footer-socials-title">Redes sociais</h2>
+                    <ul class="social-list" role="list">
+                        <li>
+                            <a href="#" aria-label="Instagram" title="Instagram">
+                               <img src="./assets/images/icons/instagram.svg" alt="Instagram">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" aria-label="WhatsApp" title="WhatsApp">
+                                <img src="./assets/images/icons/whatapp.svg" alt="WhatsApp">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" aria-label="TikTok" title="TikTok">
+                                <img src="./assets/images/icons/tiktok.svg" alt="TikTok">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" aria-label="Facebook" title="Facebook">
+                                <img src="./assets/images/icons/facebook.svg" alt="Facebook">
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+            <!-- nave de links do rodapé -->
+            <nav class="footer-nav" aria-label="Links do rodapé">
+                <div class="nav-column" aria-labelledby="footer-col-masculino">
+                    <h3 id="footer-col-masculino">Masculino</h3>
+                    <ul>
+                        <li><a href="#">Casual</a></li>
+                        <li><a href="#">Esporte</a></li>
+                        <li><a href="#">Moderno</a></li>
+                        <li><a href="#">Futurista</a></li>
+                    </ul>
+                </div>
 
-            <!-- Macro: links úteis -->
-        </section>
+                <div class="nav-column" aria-labelledby="footer-col-feminino">
+                    <h3 id="footer-col-feminino">Feminino</h3>
+                    <ul>
+                        <li><a href="#">Casual</a></li>
+                        <li><a href="#">Esporte</a></li>
+                        <li><a href="#">Moderno</a></li>
+                        <li><a href="#">Futurista</a></li>
+                    </ul>
+                </div>
 
-        <small class="copyright">© <span id="ano"></span> ecomece</small>
+                <div class="nav-column" aria-labelledby="footer-col-outlet">
+                    <h3 id="footer-col-outlet">Outlet</h3>
+                    <ul>
+                        <li><a href="#">Masculino</a></li>
+                        <li><a href="#">Feminino</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav-column" aria-labelledby="footer-col-lojas">
+                    <h3 id="footer-col-lojas">Nossas lojas</h3>
+                    <ul>
+                        <li><a href="#">Loja física</a></li>
+                        <li><a href="#">Loja online</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav-column" aria-labelledby="footer-col-sobre">
+                    <h3 id="footer-col-sobre">Sobre</h3>
+                    <ul>
+                        <li><a href="#">Quem somos</a></li>
+                        <li><a href="#">Missão</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <hr class="footer-sep" />
+
+        <div class="container footer-bottom">
+            <p class="copyright">&copy; <time id="current-year" datetime="2025">2025</time> SyntaxeWear. Todos os
+                direitos reservados.</p>
+        </div>
     </footer>
-
-    <script>
-        // Insere ano atual no footer
-        document.getElementById('ano').textContent = new Date().getFullYear();
-    </script>
 </body>
 
 </html>

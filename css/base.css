@@ -2,11 +2,11 @@ body {
     font-family: var(--font-pricipal);
     background-color: #ffff;
     color: #333333;
-    max-width: 1360px;
     margin: 0 auto;
 }
 
 main {
+    max-width: 1360px;
     padding:  2.5rem 0 0;
     margin: 0 auto;
 }
