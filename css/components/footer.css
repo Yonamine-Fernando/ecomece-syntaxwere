@@ -81,3 +81,26 @@
     font-size: 20px;
     font-weight: 500;
 }
+
+@media(max-width:1000px){
+    .footer-content{
+        flex-direction: column;
+        gap: 2rem;
+        padding: 2rem 1rem;
+    }
+
+    .footer-socials{
+        gap: 1rem;
+    }
+
+    .footer-nav{
+        flex-direction: column;
+        gap:2rem;
+    }
+
+    .footer-bottom{
+        font-size: 0.875rem;
+        padding: 1.5rem 0 1.5rem;
+    }
+
+}
